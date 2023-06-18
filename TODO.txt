@@ -1,0 +1,14 @@
+home
+scoreboard
+game pvc and cvc
+404
+
+Game stores and displays current score. Score restarts once user restarts/ends the game
+
+Nice feature would be if for instance score is saved on browser's memory so that the game is not lost if user refreshes the page by accident
+
+
+rock paper scissors lizard spock -> new game mode
+
+
+
