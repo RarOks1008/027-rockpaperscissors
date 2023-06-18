@@ -14,4 +14,6 @@ svgs for all images
 
 add a section with how to play
 
+favicon
+
 write README as on all other directories
