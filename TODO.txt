@@ -16,4 +16,6 @@ add a section with how to play
 
 favicon
 
+maybe add sounds
+
 write README as on all other directories
