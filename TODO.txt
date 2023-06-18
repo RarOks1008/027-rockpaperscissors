@@ -10,8 +10,6 @@ Nice feature would be if for instance score is saved on browser's memory so that
 
 rock paper scissors lizard spock -> new game mode
 
-svgs for all images
-
 add a section with how to play
 
 favicon

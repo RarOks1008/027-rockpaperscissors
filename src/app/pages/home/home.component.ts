@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  private readyToStart: boolean = false;
+  private gamemode: string = '';
+  private playermode: string = '';
 
+  get gameMode(): string {
+    return this.gamemode;
+  }
+
+  get isReadyToStart(): boolean {
+    return this.readyToStart;
+  }
 }

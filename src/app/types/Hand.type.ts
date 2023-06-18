@@ -1,0 +1,1 @@
+export type HandType = 'rock' | 'paper' | 'scissors' | 'lizzard' | 'spock';
