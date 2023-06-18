@@ -1,1 +1,27 @@
-<p>game works!</p>
+<img
+    [src]="computerOption.status === 'active' ? 'assets/images/hand/rock.svg' : 'assets/images/hand/' + computerOption.image"
+    [alt]="computerOption.status === 'active' ? 'rock' : computerOption.name"
+    class="hand"
+    [@fade]="computerOption.status" />
+<p class="name">Computer</p>
+
+<div class="score_holder">
+    <p class="score" *ngIf="playMode === 'pvc'">Select hand</p>
+    <app-button *ngIf="playMode === 'cvc'" text="Start Computer" (buttonAction)="start()"></app-button>
+    <p class="score">{{playMode === 'pvc' ? 'Player ' + score.player.wins + ' - ' + score.player.loses + ' Computer' : 'Computer ' + score.computer.wins + ' - ' + score.computer.loses + ' Computer'}}</p>
+</div>
+
+<div class="player">
+    <p class="name">Player</p>
+    <div class="player_selection">
+        <ng-container *ngFor="let po of playerOptions?.signals">
+            <img
+                *ngIf="po.status === 'active'"
+                [src]="'assets/images/hand/' + po.image"
+                [alt]="po.name"
+                class="hand"
+                (click)="selectSignal(po.name)"
+                [@fade]="po.status" />
+        </ng-container>
+    </div>
+</div>
