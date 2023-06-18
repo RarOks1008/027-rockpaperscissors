@@ -1,9 +1,0 @@
-scoreboard
-game
-404
-
-favicon
-
-write README as on all other directories
-
-treba da se refreshuje game board lepo

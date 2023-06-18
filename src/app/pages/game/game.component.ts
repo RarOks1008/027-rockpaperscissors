@@ -82,6 +82,8 @@ export class GameComponent implements OnInit {
     if (isWinning || isLosing) {
       this._scoreService.setScore(isWinning, true);
     }
+
+    this.refreshPage();
   }
 
   start(): void {
@@ -100,5 +102,21 @@ export class GameComponent implements OnInit {
     if (isWinning || isLosing) {
       this._scoreService.setScore(isWinning, false);
     }
+
+    this.refreshPage();
+  }
+
+  refreshPage(): void {
+    setTimeout(() => {
+      this._router.navigate(
+        ['/game'],
+        {
+          queryParams: {
+            gamemode: this.gameMode,
+            playmode: this.playMode
+          }
+        }
+      );
+    }, 1200);
   }
 }

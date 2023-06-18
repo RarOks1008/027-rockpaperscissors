@@ -9,6 +9,7 @@
     <p class="score" *ngIf="playMode === 'pvc'">Select hand</p>
     <app-button *ngIf="playMode === 'cvc'" text="Start Computer" (buttonAction)="start()"></app-button>
     <p class="score">{{playMode === 'pvc' ? 'Player ' + score.player.wins + ' - ' + score.player.loses + ' Computer' : 'Computer ' + score.computer.wins + ' - ' + score.computer.loses + ' Computer'}}</p>
+    <a class="home" routerLink="/">Home</a>
 </div>
 
 <div class="player">

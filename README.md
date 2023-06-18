@@ -1,27 +1,41 @@
-# Tictactoe
+# Rock Paper Scissors
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+*App for playing rock paper scissors lizard spock.*
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Application Desing
 
-## Code scaffolding
+### *Landing Page*
+![Landing Page](git-image/image1.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+View of the landing page.
 
-## Build
+### *Scoreboard*
+![Scoreboard](git-image/image2.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+View of the scoreboard page.
 
-## Running unit tests
+### *Game Mode*
+![Game Mode](git-image/image3.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Select game mode view.
 
-## Running end-to-end tests
+### *Play Mode*
+![Play Mode](git-image/image4.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Select play mode view.
 
-## Further help
+### *Start Game*
+![Start Game](git-image/image5.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Start game view.
+
+### *Game*
+![Game](git-image/image6.png)
+
+Game view. If you chose to play as a player you chose the hand signals bellow, if you chose Computer, you just click the *start computer* button.
+
+### *404 Page*
+![404 Page](git-image/image7.png)
+
+View of the 404 page.
