@@ -1,3 +1,19 @@
-<app-landing></app-landing>
-<app-gamemode *ngIf="isReadyToStart"></app-gamemode>
-<app-playermode *ngIf="isReadyToStart && gameMode"></app-playermode>
+<app-landing
+    *ngIf="!isReadyToStart"
+    (startGameEvent)="startGame()">
+</app-landing>
+<app-gamemode
+    *ngIf="isReadyToStart && !gameMode && !playMode"
+    (backEvent)="gameModeBack()"
+    (modeEvent)="gameModeChange($event)">
+</app-gamemode>
+<app-playmode
+    *ngIf="isReadyToStart && gameMode && !playMode"
+    (backEvent)="playModeBack()"
+    (modeEvent)="playModeChange($event)">
+</app-playmode>
+<app-start
+    *ngIf="isReadyToStart && gameMode && playMode"
+    (backEvent)="startBack()"
+    (startEvent)="startStart()">
+</app-start>

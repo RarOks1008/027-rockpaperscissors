@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlayermodeComponent } from './playermode.component';
+import { StartComponent } from './start.component';
 
-describe('PlayermodeComponent', () => {
-  let component: PlayermodeComponent;
-  let fixture: ComponentFixture<PlayermodeComponent>;
+describe('StartComponent', () => {
+  let component: StartComponent;
+  let fixture: ComponentFixture<StartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlayermodeComponent ]
+      declarations: [ StartComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PlayermodeComponent);
+    fixture = TestBed.createComponent(StartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

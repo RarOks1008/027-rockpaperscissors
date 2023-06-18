@@ -7,6 +7,8 @@ Game stores and displays current score. Score restarts once user restarts/ends t
 
 Nice feature would be if for instance score is saved on browser's memory so that the game is not lost if user refreshes the page by accident
 
+I can play Player Vs Computer
+I can play Computer Vs Computer
 
 rock paper scissors lizard spock -> new game mode
 

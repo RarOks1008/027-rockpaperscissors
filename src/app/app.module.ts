@@ -10,7 +10,9 @@ import { RouterModule } from '@angular/router';
 import { routes } from './routes';
 import { LandingComponent } from './components/landing/landing.component';
 import { GamemodeComponent } from './components/gamemode/gamemode.component';
-import { PlayermodeComponent } from './components/playermode/playermode.component';
+import { PlaymodeComponent } from './components/playmode/playmode.component';
+import { ButtonComponent } from './components/button/button.component';
+import { StartComponent } from './components/start/start.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PlayermodeComponent } from './components/playermode/playermode.componen
     Page404Component,
     LandingComponent,
     GamemodeComponent,
-    PlayermodeComponent
+    PlaymodeComponent,
+    ButtonComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
+  @Output() startGameEvent: EventEmitter<void> = new EventEmitter<void>();
 
+  start(): void {
+    this.startGameEvent.next();
+  }
 }

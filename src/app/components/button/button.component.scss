@@ -1,0 +1,11 @@
+.custom_button {
+    background-color: transparent;
+    font-size: 60px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+}
